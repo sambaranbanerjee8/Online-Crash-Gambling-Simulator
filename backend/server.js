@@ -40,7 +40,7 @@ server.listen(3001, () => {
 
 // Connect to MongoDB 
 mongoose.connect(
-  process.env.mongodb+srv://sambaranbanerjee8:<jMsCgzht2rMFMLoK>@cluster0.i2zkvx4.mongodb.net/?retryWrites=true&w=majority,
+  process.env.MONGOOSE_DB_LINK,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
